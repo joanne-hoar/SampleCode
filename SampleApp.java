@@ -5,8 +5,10 @@ public class SampleApp
 		MyClass theObject;
 		theObject  = new MyClass();
 
+		int inputNumber = Integer.parseInt(args[1]);
+ 
 		if(theObject.getSecretNumber() <= 5)
-		theObject.setSecretNumber(7);
+			theObject.setSecretNumber(inputNumber);
 		
 		theObject.PrintMessage();
 	}
